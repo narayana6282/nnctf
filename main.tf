@@ -21,15 +21,15 @@ resource "aws_instance" "lms" {
       "python3 -m venv /home/ubuntu/venv",
       ". /home/ubuntu/venv/bin/activate",
       "git clone https://github.com/narayana6282/lms0710.git",
-      "cd nlm2",
+      "cd lms0710",
       "pip install django",
       "sudo apt-get install libmysqlclient-dev -y",
       "sudo apt install pkg-config -y",
       "pip install mysqlclient",
       "pip  install -r requirements.txt",
-      "python /home/ubuntu/nlm2/manage.py makemigrations",
-      "python /home/ubuntu/nlm2/manage.py migrate",
-      "python /home/ubuntu/nlm2/manage.py runserver 0.0.0.0:8000"
+      "python /home/ubuntu/lms0710/manage.py makemigrations",
+      "python /home/ubuntu/lms0710/manage.py migrate",
+      "python /home/ubuntu/lms0710/manage.py runserver 0.0.0.0:8000"
     ]
 
 
