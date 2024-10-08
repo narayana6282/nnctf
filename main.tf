@@ -20,7 +20,7 @@ resource "aws_instance" "lms" {
       "sudo apt install python3-venv -y",
       "python3 -m venv /home/ubuntu/venv",
       ". /home/ubuntu/venv/bin/activate",
-      "git clone https://github.com/narayana6282/nlm2.git",
+      "git clone https://github.com/narayana6282/lms0710.git",
       "cd nlm2",
       "pip install django",
       "sudo apt-get install libmysqlclient-dev -y",
